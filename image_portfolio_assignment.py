@@ -1,5 +1,12 @@
 # Group: 8-bit Federation (Team 8)	
 # Christopher Caldwell	
+#
+# With code contributions from:
+# Muaath Alaraj
+# Doan Dinh
+# Corey Johnson
+# and Thomas Krause
+#
 # Date: 3/16/2018
 # VERSION 1.00
 
@@ -32,8 +39,8 @@ def saveOutput(img, fileName):
   repaint(img)
   writePictureTo(img, workingDir + "\\OutputMedia\\" + fileName)
   
-""" BEGIN PROJECT CODE"""
-      
+""" BEGIN FUNCTIONS CODE"""
+
 # Rose Colored Glasses
 def roseColoredGlasses(pic):
   pixels = getPixels(pic)
@@ -302,13 +309,7 @@ def lineDrawing(pic):
   return pic
 
 
-""" TEST CODE SECTION """
-# Color Artify
-pic = getImg("cat.jpg")
-pic = artify(pic)
-repaint(pic)
-saveOutput(pic, "artify.jpg")
-
+""" IMAGE MANIPULATION AND OUTPUT SECTION """
 
 # Rose Colored Glasses
 pic = getImg("bear.jpg")
